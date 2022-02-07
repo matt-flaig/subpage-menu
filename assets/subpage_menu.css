@@ -1,0 +1,54 @@
+.subpage_menu {
+	/* get div to extend outside parent */
+	position: absolute;
+	display: block;
+	overflow-y: hidden;
+	overflow-x: scroll !important;
+	white-space: nowrap;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgb(0, 0, 0);
+	vertical-align: middle;
+	left:0;
+	right:0;
+}
+ul.subpage_menu {
+	list-style-type: none;
+}
+
+ul.subpage_menu li:before {
+}
+
+ul.subpage_menu li {
+	color: #fff;
+	display: inline-block;
+	margin-right: 35px;
+	line-height: 50px;
+}
+
+ul.subpage_menu li a {
+	color: #fff;
+	opacity: 0.75;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 1px;
+	margin-top: 0px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	white-space: pre-wrap;
+}
+.subpage_menu_item a:hover {
+	color: rgb(255, 255, 255) !important;
+	opacity: 1;
+}
