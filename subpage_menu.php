@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Subpage Menu (Visual Composer)
+Plugin Name: Subpage Menu (WPBakery Page Builder)
 Plugin Shortname: subpage_menu
 Description: Displays a menu of a parent pages' subpages, or a child pages' siblings.
 Version: 0.1
@@ -38,9 +38,9 @@ class VCSubpageMenuAddonClass
 	{
 		global $uncode_colors, $uncode_colors_w_transp, $uncode_post_types;
 
-		// Check if Visual Composer is installed
+		// Check if WPBakery Page Builder is installed
 		if (!defined('WPB_VC_VERSION')) {
-			// Display notice that Visual Compser is required
+			// Display notice that WPBakery Page Builder is required
 			add_action('admin_notices', array(
 				$this,
 				'showVcVersionNotice'
@@ -158,14 +158,14 @@ class VCSubpageMenuAddonClass
 	}
 	
 	/*
-	Show notice if your plugin is activated but Visual Composer is not
+	Show notice if your plugin is activated but WPBakery Page Builder is not
 	*/
 	public function showVcVersionNotice()
 	{
 		$plugin_data = get_plugin_data(__FILE__);
 		echo '
 				<div class="updated">
-					<p>' . sprintf(__('<strong>%s</strong> requires <strong><a href="http://bit.ly/vcomposer" target="_blank">Visual Composer</a></strong> plugin to be installed and activated on your site.', 'subpage_menu'), $plugin_data['Name']) . '</p>
+					<p>' . sprintf(__('<strong>%s</strong> requires <strong><a href="http://bit.ly/vcomposer" target="_blank">WPBakery Page Builder</a></strong> plugin to be installed and activated on your site.', 'subpage_menu'), $plugin_data['Name']) . '</p>
 				</div>';
 	}
 }
